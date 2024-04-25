@@ -1,8 +1,36 @@
 import random
 from colorama import Fore
-#full = open dictioanry file
+import pygame
+import sys
+import random
+
+
+# pygame.init()
+
+# # Constants
+# WIDTH, HEIGHT = 600, 600
+# SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
+# BACKGROUND = pygame.image.load("assets/Starting Tiles.png")
+# BACKGROUND_RECT = BACKGROUND.get_rect(center=(260, 300))
+# ICON = pygame.image.load("assets/Icon.png")
+
+# pygame.display.set_caption("Wordle!")
+# pygame.display.set_icon(ICON)
+
+# running = True
+# while running:
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             running = False
+#     SCREEN.fill("white")
+#     SCREEN.blit(BACKGROUND, BACKGROUND_RECT)
+#     pygame.display.update()
+
+# pygame.quit()
+
+
+
 full = open('dictionary.txt','r')
-#words = words.read().split()
 words = full.read().split()
 print(words)
 correct = random.choice(words)
